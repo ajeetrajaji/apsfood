@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="veg-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Veg Items</title>
+</head>
+<body>
+    <section class="veg">
+        <header>
+            <h1>Vegetarian Food</h1>
+            <nav class="">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../nonveg/nonveg-index.html">Non-Veg</a></li>
+                    <li><a href="../icecreams/icecream-index.html">Ice-Creams</a></li>
+                    <!-- <li><a href="../milkshakes/milk-index.html">Milkshakes</a></li> -->
+                    <li><a href="../juices/juices-index.html">Juices & Shakes</a></li>
+                    <li><a href="../cakes/cakes-index.html">Cakes</a></li>
+                    <li><a href="../contact/contact-index.html">Contacts</a></li>
+                    <li><a href="../login/login-index.html">Login</a></li>
+                    <button class="btn-cart">Cart 
+                        <i class="fa fa-cart-plus" id="cart-icon"></i>
+                    </button>
+                    <div class="cart-count">0</div>
+                </ul>
+            </nav>
+
+            <!--   cart section     -->
+
+            <div class="cart">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+                    <!-- <div class="cart-box">
+                        <img src="./vegimages/babycorn.jpg" class="cart-img">
+                        <div class="detail">
+                            <div class="cart-food-title">Babycorn</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs. 210</div>
+                                <div class="cart-amount">Rs. 210</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove" id="rem"></i>
+                    </div> -->
+                    <!-- <div class="cart-box">
+                        <img src="./vegimages/burger.jpg" class="cart-img">
+                        <div class="detail">
+                            <div class="cart-food-title">Burger</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs. 250</div>
+                                <div class="cart-amount">Rs. 250</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div> -->
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs. 0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+            </div>
+
+
+        </header>
+        <div class="slider">
+
+            <div class="myslider fade">
+                <img src="./vegimages/zpop1.jpg" alt="">
+            </div>
+
+            <div class="myslider fade">
+                <img src="./vegimages/zpop2.jpg" alt="">
+            </div>
+
+            <div class="myslider fade">
+                <img src="./vegimages/zpop3.jpg" alt="">
+            </div>
+
+            <div class="myslider fade">
+                <img src="./vegimages/zpop4.webp" alt="">
+            </div>
+
+            <div class="myslider fade">
+                <img src="./vegimages/zpop5.webp" alt="">
+            </div>
+            
+            <!-- <a href="" class="prev" onclick="plusSlider(-1)"><i class="fa fa-arrow-left"></i></a> -->
+            <!-- <a href="" class="next" onclick="plusSlider(1)"><i class="fa fa-arrow-right"></i></a> -->
+
+        <div class="dotsbox" style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+    </div>
+        <div class="container">
+            <div class="food-box">
+                <img src="./vegimages/puri.jpg" class="food-img">
+                <h2 class="food-title">Special Thali</h2>
+                <h3 class="food-price">Rs. 150.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./vegimages/chiilpotato.jpg" class="food-img">
+                <h2 class="food-title">Chilli Potato</h2>
+                <h3 class="food-price">Rs. 110.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./vegimages/idli.jpg" class="food-img">
+                <h2 class="food-title">Idli</h2>
+                <h3 class="food-price">Rs. 140.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./vegimages/mixveg.jpg" class="food-img">
+                <h2 class="food-title">Mix Veg</h2>
+                <h3 class="food-price">Rs. 160.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./vegimages/burger.jpg" class="food-img">
+                <h2 class="food-title">Burger</h2>
+                <h3 class="food-price">Rs. 90.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./vegimages/shahipaneer.jpg" class="food-img">
+                <h2 class="food-title">Shahi Paneer</h2>
+                <h3 class="food-price">Rs. 150.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="./vegimages/choumin.jpg" class="food-img">
+                <h2 class="food-title">Noodles</h2>
+                <h3 class="food-price">Rs. 100.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="./vegimages/friedrice.jpg" class="food-img">
+                <h2 class="food-title">Fried rice</h2>
+                <h3 class="food-price">Rs. 120.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="./vegimages/babycorn.jpg" class="food-img">
+                <h2 class="food-title">Babycorn</h2>
+                <h3 class="food-price">Rs. 190.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="./vegimages/chole.jpg" class="food-img">
+                <h2 class="food-title">Chole Bhature</h2>
+                <h3 class="food-price">Rs. 140.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="./vegimages/french.jpg" class="food-img">
+                <h2 class="food-title">French fried</h2>
+                <h3 class="food-price">Rs. 160.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="./vegimages/kadhaipaneer.jpg" class="food-img">
+                <h2 class="food-title">Kadhai paneer</h2>
+                <h3 class="food-price">Rs. 170.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="./vegimages/maggie.jpg" class="food-img">
+                <h2 class="food-title">maggie</h2>
+                <h3 class="food-price">Rs. 90.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="./vegimages/madhroom.jpg" class="food-img">
+                <h2 class="food-title">Mashroom</h2>
+                <h3 class="food-price">Rs. 170.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="./vegimages/shahithali.jpg" class="food-img">
+                <h2 class="food-title">Shahi thali</h2>
+                <h3 class="food-price">Rs. 300.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="./vegimages/menchurian.jpg" class="food-img">
+                <h2 class="food-title">Menchurian</h2>
+                <h3 class="food-price">Rs. 160.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./vegimages/kadhipakoda.jpg" class="food-img">
+                <h2 class="food-title">Kadhi pakoda</h2>
+                <h3 class="food-price">Rs. 200.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./vegimages/salad.jpg" class="food-img">
+                <h2 class="food-title">Green salad</h2>
+                <h3 class="food-price">Rs. 190.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    
+
+    <script src="../javascript/slider.js"></script>
+
+    <script src="../javascript/script.js"></script>
+
+</body>
+</html>

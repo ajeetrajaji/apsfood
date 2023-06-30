@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@300;400;500;600;700&display=swap'); */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.home{
+    min-height: 110vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../images/11.jpg");
+    /* background-image: url("./images/1.jpg"); */
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(12,11,9,0.6);
+    color: #fff;
+    padding: 10px 100px 10px 20px;
+   
+}
+nav .logo h1{
+    color: rgb(242, 255, 0);
+    font-size: 25px;
+}
+nav .logo h1 span{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+nav ul li a:hover{
+    color: #cda45e;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 30px 0 ;
+}
+.wraper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid #cda45e;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* transform: scale(0); */
+    transition: height 0.2s ease;
+}
+.wraper.active-popup{
+    transform: scale(1);
+}
+.wraper.active{
+    /* height: 420px; */
+}
+
+.wraper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.wraper .form-box.login{
+    /* display: none; */
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+.wraper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+
+.wraper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wraper.active .form-box.register{
+    
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.wraper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    font-size: 2em;
+    color: #cda45e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-box h2{
+    color: #cda45e;
+    text-align: center;
+    font-size: 30px;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #cda45e;
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #cda45e;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 200;
+    /* padding: 0px 35px; */
+
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #cda45e;
+    line-height: 50px;
+}
+.remember-forgot{
+    font-size: 17px;
+    color: #cda45e;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: #162938;
+    margin-right: 5px;
+}
+.remember-forgot a {
+    color: #cda45e;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #cda45e;
+
+}
+.login-register{
+    font-size: 15px;
+    color: #cda45e;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p{
+    color: #8ee1ff;
+}
+.login-register a{
+    color: #cda45e;
+    text-decoration: none;
+    font-weight:400;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+
+
+

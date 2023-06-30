@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../juices/juice-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Juices & Shakes</title>
+</head>
+<body>
+    <section class="veg">
+        <header>
+            <h1>Juices & Shakes</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../veg/veg-index.html">Veg</a></li>
+                    <li><a href="../nonveg/nonveg-index.html">Non-Veg</a></li>
+                    <li><a href="../icecreams/icecream-index.html">Ice-Creams</a></li>
+                    <!-- <li><a href="../milkshakes/milk-index.html">Milkshakes</a></li> -->
+                    <li><a href="../cakes/cakes-index.html">Cakes</a></li>
+                    <li><a href="../contact/contact-index.html">Contacts</a></li>
+                    <li><a href="../login/login-index.html">Login</a></li>
+                    <button class="btn-cart">Cart 
+                        <i class="fa fa-cart-plus" id="cart-icon"></i>
+                    </button>
+                    <div class="cart-count">0</div>
+                </ul>
+            </nav>
+
+            <!--   cart section     -->
+
+            <div class="cart">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+                   
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs. 0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+            </div>
+
+
+        </header>
+
+        <div class="slider">
+
+            <div class="myslider fade">
+                <img src="./jimages/zpop1.jpg" alt="">
+            </div>
+
+            <div class="myslider fade">
+                <img src="./jimages/zpop2.jpg" alt="">
+            </div>
+
+            <div class="myslider fade">
+                <img src="./jimages/zpop3.jpg" alt="">
+            </div>
+
+            <div class="myslider fade">
+                <img src="./jimages/zpop4.jpg" alt="">
+            </div>
+
+            <div class="myslider fade">
+                <img src="./jimages/zpop5.jpg" alt="">
+            </div>
+            
+            <!-- <a href="" class="prev" onclick="plusSlider(-1)"><i class="fa fa-arrow-left"></i></a> -->
+            <!-- <a href="" class="next" onclick="plusSlider(1)"><i class="fa fa-arrow-right"></i></a> -->
+
+        <div class="dotsbox" style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+    </div>
+
+
+        <div class="container">
+            <div class="food-box">
+                <img src="../juices/jimages/banana.jpg" class="food-img">
+                <h2 class="food-title">Banana Shake</h2>
+                <h3 class="food-price">Rs. 100.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="../juices/jimages/amla.jpg" class="food-img">
+                <h2 class="food-title">Amla Juice</h2>
+                <h3 class="food-price">Rs. 130.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="../juices/jimages/apple.jpg" class="food-img">
+                <h2 class="food-title">Apple Juice</h2>
+                <h3 class="food-price">Rs. 250.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="../juices/jimages/avcado.jpg" class="food-img">
+                <h2 class="food-title">Avcado Juice</h2>
+                <h3 class="food-price">Rs. 390.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="../juices/jimages/blackgrapes.jpg" class="food-img">
+                <h2 class="food-title">Black Grapes</h2>
+                <h3 class="food-price">Rs. 220.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="../juices/jimages/butter.jpg" class="food-img">
+                <h2 class="food-title">Butter Scotch</h2>
+                <h3 class="food-price">Rs. 190.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../juices/jimages/carrot.jpg" class="food-img">
+                <h2 class="food-title">Carrot Juice</h2>
+                <h3 class="food-price">Rs. 110.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../juices/jimages/chocolate.jpg" class="food-img">
+                <h2 class="food-title">Chocolate Shak</h2>
+                <h3 class="food-price">Rs. 130.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../juices/jimages/cookies.jpg" class="food-img">
+                <h2 class="food-title">Cookies Shake</h2>
+                <h3 class="food-price">Rs. 150.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../juices/jimages/gingerlemon.jpg" class="food-img">
+                <h2 class="food-title">Ginger Juice</h2>
+                <h3 class="food-price">Rs. 140.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../juices/jimages/khajoor.jpg" class="food-img">
+                <h2 class="food-title">Khajoor Shakes</h2>
+                <h3 class="food-price">Rs. 180.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../juices/jimages/mango.jpg" class="food-img">
+                <h2 class="food-title">Mango Shake</h2>
+                <h3 class="food-price">Rs. 120.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="../juices/jimages/mocha.jpg" class="food-img">
+                <h2 class="food-title">Mocha Shake</h2>
+                <h3 class="food-price">Rs. 150.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../juices/jimages/orrange.jpg" class="food-img">
+                <h2 class="food-title">Orange Juice</h2>
+                <h3 class="food-price">Rs. 110.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="../juices/jimages/papaya.jpg" class="food-img">
+                <h2 class="food-title">Papaya Juice</h2>
+                <h3 class="food-price">Rs. 170.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../juices/jimages/pineapple.jpg" class="food-img">
+                <h2 class="food-title">Pineapple</h2>
+                <h3 class="food-price">Rs. 160.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="../juices/jimages/pista.jpg" class="food-img">
+                <h2 class="food-title">Pista Shake</h2>
+                <h3 class="food-price">Rs. 230.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../juices/jimages/strawberry.jpg" class="food-img">
+                <h2 class="food-title">Strawberry</h2>
+                <h3 class="food-price">Rs. 190.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="../juices/jimages/watermelon.jpg" class="food-img">
+                <h2 class="food-title">Watermelon</h2>
+                <h3 class="food-price">Rs. 130.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../juices/jimages/vanila.jpg" class="food-img">
+                <h2 class="food-title">Vanilla Shake</h2>
+                <h3 class="food-price">Rs. 120.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            
+            
+            
+        </div>
+    </section>
+
+    <script src="../javascript/slider.js"></script>
+
+    <script src="../javascript/script.js"></script>
+
+</body>
+</html>

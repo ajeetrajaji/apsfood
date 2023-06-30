@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@300;400;500;600;700&display=swap'); */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.home{
+    min-height: 110vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("./images/1.jpg");
+    /* background-image: url("./images/1.jpg"); */
+    background-repeat: repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(12,11,9,0.6);
+    color: #fff;
+    padding: 10px 100px 10px 20px;
+   
+}
+nav .logo h1{
+    color: rgb(242, 255, 0);
+    font-size: 25px;
+}
+nav .logo h1 span{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+nav ul li a:hover{
+    color: #cda45e;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin-top: -70px;
+}
+.banner h2{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 1px solid #cda45e;
+    padding: 20px;
+}
+.banner h2 span{
+    color: #cda45e;
+    font-size: 25px;
+}
+.banner h3{
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 40px;
+}
+.special{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.special h1{
+    background-color: #cda45e;
+    color: #292929;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 12px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 490px;
+    top: 250px;
+}
+.special .special-box{
+    height: 190px;
+    width: 150px;
+    background: rgba(12,11,9,0.6);
+    margin-bottom: 50px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 2px solid #cda45e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.special-box img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #cda45e;
+}
+.special-box h2{
+    color: #cda45e;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+}
+.special-box h3{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.footer{
+    background-color: #292929;
+    /* background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(""); */
+  
+}
+
+.foot{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.footer h1{
+    color: rgb(242, 255, 0);
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+}
+.footer h1 span{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    
+}
+.one h2{
+    color: #cda45e;
+    margin: 10px;
+}
+.one ul li{
+    color: rgb(249, 242, 168);
+   
+}
+.one ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.footer h4{
+    color: #cda45e;
+    text-align: center;
+    padding: 10px;
+}
+
+.three h2{
+    color: #cda45e;
+    margin: 15px;
+}
+
+.three .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 30px;
+    flex-wrap: wrap;
+    
+}
+.social a{
+    color: #cda45e;
+    display: block;
+    border: 2px solid #cda45e;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+
+}
+
+
+
+@media screen and (max-width:680px) {
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    nav ul{
+        margin: 0 auto;
+    }
+}
+
+

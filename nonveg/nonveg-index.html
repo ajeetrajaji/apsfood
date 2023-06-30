@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../nonveg/nonveg-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NonVeg Items</title>
+</head>
+<body>
+    <section class="veg">
+        <header>
+            <h1>Non-Vegetarian Food</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../veg/veg-index.html">Veg</a></li>
+                    <li><a href="../icecreams/icecream-index.html">Ice-Creams</a></li>
+                    <!-- <li><a href="../milkshakes/milk-index.html">Milkshakes</a></li> -->
+                    <li><a href="../juices/juices-index.html">Juices & Shakes</a></li>
+                    <li><a href="../cakes/cakes-index.html">Cakes</a></li>
+                    <li><a href="../contact/contact-index.html">Contacts</a></li>
+                    <li><a href="../login/login-index.html">Login</a></li>
+                    <button class="btn-cart">Cart 
+                        <i class="fa fa-cart-plus" id="cart-icon"></i>
+                    </button>
+                    <div class="cart-count">0</div>
+                </ul>
+            </nav>
+
+            <!--   cart section     -->
+
+            <div class="cart">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+                    <!-- <div class="cart-box">
+                        <img src="./vegimages/babycorn.jpg" class="cart-img">
+                        <div class="detail">
+                            <div class="cart-food-title">Babycorn</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs. 210</div>
+                                <div class="cart-amount">Rs. 210</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove" id="rem"></i>
+                    </div> -->
+                    <!-- <div class="cart-box">
+                        <img src="./vegimages/burger.jpg" class="cart-img">
+                        <div class="detail">
+                            <div class="cart-food-title">Burger</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs. 250</div>
+                                <div class="cart-amount">Rs. 250</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div> -->
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs. 0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+            </div>
+
+
+        </header>
+
+        <div class="slider">
+
+            <div class="myslider fade">
+                <img src="./nimages/zpop1.jpg" alt="">
+            </div>
+
+            <div class="myslider fade">
+                <img src="./nimages/zpop6.jpg" alt="">
+            </div>
+
+            <div class="myslider fade">
+                <img src="./nimages/zpop3.jpg" alt="">
+            </div>
+
+            <div class="myslider fade">
+                <img src="./nimages/zpop4.webp" alt="">
+            </div>
+
+            <div class="myslider fade">
+                <img src="./nimages/zpop5.jpg" alt="">
+            </div>
+            
+            <!-- <a href="" class="prev" onclick="plusSlider(-1)"><i class="fa fa-arrow-left"></i></a> -->
+            <!-- <a href="" class="next" onclick="plusSlider(1)"><i class="fa fa-arrow-right"></i></a> -->
+
+        <div class="dotsbox" style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+    </div>
+
+    <div class="txt"><h1>Order Your Favorite Non-Veg food</h1>
+    </div>
+        <div class="container">
+           
+            <div class="food-box">
+                <img src="../nonveg/nimages/download.jpg" class="food-img">
+                <h2 class="food-title">Chiken Biryani</h2>
+                <h3 class="food-price">Rs. 160.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="../nonveg/nimages/eggpakora.jpg" class="food-img">
+                <h2 class="food-title">Egg Pakora</h2>
+                <h3 class="food-price">Rs. 130.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="../nonveg/nimages/fishcurry.jpg" class="food-img">
+                <h2 class="food-title">fish Curry</h2>
+                <h3 class="food-price">Rs. 110.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="../nonveg/nimages/mutton.jpg" class="food-img">
+                <h2 class="food-title">Mutton</h2>
+                <h3 class="food-price">Rs. 190.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="../nonveg/nimages/handi.jpg" class="food-img">
+                <h2 class="food-title">Chicken Handi</h2>
+                <h3 class="food-price">Rs. 220.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="../nonveg/nimages/chickenthali.jpg" class="food-img">
+                <h2 class="food-title">Chicken Thali</h2>
+                <h3 class="food-price">Rs. 250.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../nonveg/nimages/dryfish.jpg" class="food-img">
+                <h2 class="food-title">Dry Fish</h2>
+                <h3 class="food-price">Rs. 180.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../nonveg/nimages/eggbiryani.jpg" class="food-img">
+                <h2 class="food-title">Egg Biryani</h2>
+                <h3 class="food-price">Rs. 130.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../nonveg/nimages/chikengravi.jpg" class="food-img">
+                <h2 class="food-title">Chicken Gravi</h2>
+                <h3 class="food-price">Rs. 190.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../nonveg/nimages/eggcurry.jpg" class="food-img">
+                <h2 class="food-title">Egg Curry</h2>
+                <h3 class="food-price">Rs. 140.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../nonveg/nimages/rostedchicken.jpg" class="food-img">
+                <h2 class="food-title">Rosted Chicken</h2>
+                <h3 class="food-price">Rs. 290.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="../nonveg/nimages/rostedfish.jpg" class="food-img">
+                <h2 class="food-title">Rosted Fish</h2>
+                <h3 class="food-price">Rs. 220.00</h3>
+                <button class="add-cart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            
+            
+            
+        </div>
+    </section>
+
+    <script src="../javascript/slider.js"></script>
+
+    <script src="../javascript/script.js"></script>
+
+</body>
+</html>
