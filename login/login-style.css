@@ -225,5 +225,31 @@ nav ul li a:hover{
 }
 
 
-
+@media screen and (max-width:680px) {
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    nav ul{
+        margin: 0 auto;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    .container{
+        /* display: flex;
+        flex-direction: column; */
+        flex-wrap: wrap;
+        overflow: auto;
+    }
+    .part .addr{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+    }
+}
 

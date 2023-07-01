@@ -22,10 +22,13 @@
                     <li><a href="../cakes/cakes-index.html">Cakes</a></li>
                     <li><a href="../contact/contact-index.html">Contacts</a></li>
                     <li><a href="../login/login-index.html">Login</a></li>
-                    <button class="btn-cart">Cart 
-                        <i class="fa fa-cart-plus" id="cart-icon"></i>
-                    </button>
-                    <div class="cart-count">0</div>
+                    <div class="count">
+                        <button class="btn-cart">Cart 
+                        <i class="fa fa-cart-plus" id="cart-icon"></i> 
+                        </button>
+                        <div class="cart-count">0</div>
+                    </div> 
+                  
                 </ul>
             </nav>
 
@@ -48,40 +51,46 @@
         </header>
 
         <div class="slider">
-
-            <div class="myslider fade">
-                <img src="./iimage/zpop1.jpg" alt="">
-            </div>
-
-            <div class="myslider fade">
-                <img src="./iimage/zpop2.jpg" alt="">
-            </div>
-
-            <div class="myslider fade">
-                <img src="./iimage/zpop3.jpg" alt="">
-            </div>
-
-            <div class="myslider fade">
-                <img src="./iimage/zpop4.png" alt="">
-            </div>
-
-            <div class="myslider fade">
-                <img src="./iimage/zpop5.jpg" alt="">
+            
+            <div class="myslide fade">
+                
+                <img src="./iimage/zpop1.jpg" style="width: 100%; height: 100%;">
             </div>
             
-            <!-- <a href="" class="prev" onclick="plusSlider(-1)"><i class="fa fa-arrow-left"></i></a> -->
-            <!-- <a href="" class="next" onclick="plusSlider(1)"><i class="fa fa-arrow-right"></i></a> -->
-
-        <div class="dotsbox" style="text-align: center;">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
+            <div class="myslide fade">
+                
+                <img src="./iimage/zpop2.jpg" style="width: 100%; height: 100%;">
+            </div>
+            
+            <div class="myslide fade">
+               
+                <img src="./iimage/zpop3.jpg" style="width: 100%; height: 100%;">
+            </div>
+            
+            <div class="myslide fade">
+               
+                <img src="./iimage/zpop6.jpg" style="width: 100%; height: 100%;">
+            </div>
+            
+            <div class="myslide fade">
+               
+                <img src="./iimage/zpop5.jpg" style="width: 100%; height: 100%;">
+            </div>
+            
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            <div class="dotsbox" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            
         </div>
-
-    </div>
-
 
         <div class="container">
             <div class="food-box">

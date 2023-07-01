@@ -58,7 +58,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-    margin-top: -70px;
+    /* margin-top: -70px; */
 }
 .banner h2{
     color: #fff;
@@ -86,17 +86,14 @@ nav ul li a:hover{
     gap: 20px;
     flex-wrap: wrap;
 }
-.special h1{
+.banner h1{
     background-color: #cda45e;
     color: #292929;
-    margin-top: 50px;
+    margin: 0 auto;
     padding: 10px;
     font-size: 12px;
     word-spacing: 5px;
     text-transform: uppercase;
-    position: absolute;
-    left: 490px;
-    top: 250px;
 }
 .special .special-box{
     height: 190px;
@@ -208,12 +205,13 @@ nav ul li a:hover{
 @media screen and (max-width:680px) {
     nav{
         flex-direction: column;
-    }
-    .logo{
-        margin: 0 auto;
+        height: auto;
     }
     nav ul{
         margin: 0 auto;
+    }
+    nav ul li{
+        width: 100%;
     }
 }
 
